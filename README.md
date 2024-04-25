@@ -8,5 +8,13 @@ This software adds an object to the APRS.fi map via rotate.aprs2.net. The object
 A dot symbol is hardcoded into the APRS string that is sent via a socket. Future releases will hopefully include an easy way to graphically change the icon, which will be useful for adding specific events to the map (Wx events, key locations, etc)
 
 
-Example:
+Examples:
+
+APRS Object
+
 ![image](https://github.com/N1OF/ARES2APRS/assets/125296450/ac1e8796-15fe-4bae-b117-840cfaa073a4)
+
+
+Software GUI
+
+![image](https://github.com/N1OF/ARES2APRS/assets/125296450/45875a58-87a1-49f8-beb4-2c5a1e6d248f)
