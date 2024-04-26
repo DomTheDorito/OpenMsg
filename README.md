@@ -18,3 +18,15 @@ APRS Object
 Software GUI
 
 ![image](https://github.com/N1OF/ARES2APRS/assets/125296450/45875a58-87a1-49f8-beb4-2c5a1e6d248f)
+
+
+**About our versioning:**
+Our versioning is as follows:
+v(Major).(Minor).(Bugfix)(Type)-(Build)
+
+So for example, v0.2.0b-2 reads out to be
+"Version 0, minor update 2, bugfix 0, beta, build 2"
+
+Why the build number? Sometimes changes don't neatly fall into one of the options above, so hence the build number. 
+Maybe there was a typo in documentation, or code was cleaned up. It allows more granularity to the versioning.
+ 
