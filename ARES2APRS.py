@@ -1,4 +1,4 @@
-## ARES2APRS v0.1.0
+## ARES2APRS v0.2.0
 ## Written by Scott N1OF and Dominic AD8AK
 ## Private Open Source License 1.0
 ## Copyright 2024 Scott Sheets & Dominic Hord
@@ -14,7 +14,7 @@ from datetime import datetime
 class APRSFIUploader:
     def __init__(self, root):
         self.root = root
-        self.root.title("ARES2APRS v0.1.0 by N1OF/AD8AK")
+        self.root.title("ARES2APRS v0.2.0 by N1OF/AD8AK")
 
         # Net Operator Callsign Field
         tk.Label(root, text="Net Operator Callsign:").grid(row=0, column=0, sticky="w")
@@ -46,9 +46,19 @@ class APRSFIUploader:
         self.address_entry = tk.Entry(root)
         self.address_entry.grid(row=5, column=1)
 
-        # Upload Button
+        # Table Select Field
+        tk.Label(root, text="Table Select:").grid(row=6, column=0, sticky="w")
+        self.table_entry = tk.Entry(root)
+        self.table_entry.grid(row=6, column=1)
+
+        # Symbol Field
+        tk.Label(root, text="Symbol:").grid(row=7, column=0, sticky="w")
+        self.symbol_entry = tk.Entry(root)
+        self.symbol_entry.grid(row=7, column=1)
+
+        # Upload Button (Moved to row 8 to accommodate new fields)
         self.upload_button = tk.Button(root, text="Upload to APRS", command=self.upload)
-        self.upload_button.grid(row=7, columnspan=2)
+        self.upload_button.grid(row=8, columnspan=2)
         
     def get_coordinates(self, address):
         # Use Geocode to find coordinates
@@ -84,6 +94,8 @@ class APRSFIUploader:
         report_entry_formatted = self.format_report_entry(self.report_entry.get())
         comment = self.comment_entry.get()
         address = self.address_entry.get()
+        table = self.table_entry.get()
+        symbol = self.symbol_entry.get()
 
         # Convert address to coordinates
         latitude, longitude = self.get_coordinates(address)
@@ -109,11 +121,11 @@ class APRSFIUploader:
             aprs_port = 14580
             aprs_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             aprs_socket.connect((aprs_server, aprs_port))
-            login_data = 'user {} pass {} vers APRS Uploader v0.1.0 by N1OF/AD8AK'.format(operator_callsign, operator_passcode)
+            login_data = 'user {} pass {} vers APRS Uploader v0.2.0 by N1OF/AD8AK'.format(operator_callsign, operator_passcode)
             aprs_socket.sendall(login_data.encode() + b'\n')
 
             # Send APRS data with current time
-            aprs_data = f"{operator_callsign}>APZ420,TCPIP*:;{report_entry_formatted}*{current_time}z{formatted_latitude}/{formatted_longitude}/{comment}-Reported by {spotter_callsign}\n"
+            aprs_data = f"{operator_callsign}>APZ420,TCPIP*:;{report_entry_formatted}*{current_time}z{formatted_latitude}{table}{formatted_longitude}{symbol}{comment}-Reported by {spotter_callsign}\n"
             aprs_socket.sendall(aprs_data.encode())
             
             # Change color of upload button to green if successful and clears fields.
