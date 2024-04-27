@@ -7,10 +7,13 @@ This software adds an object to the APRS.fi map via rotate.aprs2.net. The object
 
 **PREREQUISITES**
 
-Python (duh)
-Internet Connection
-Patience with the developers
-Valid Amateur Radio Callsign and APRS passcode. (Magicbug has a great APRS passcode generator available here: https://github.com/magicbug/PHP-APRS-Passcode)
+-Python (duh)
+
+-Internet Connection
+
+-Patience with the developers
+
+-Valid Amateur Radio Callsign and APRS passcode. (Magicbug has a great APRS passcode generator available here: https://github.com/magicbug/PHP-APRS-Passcode)
 
 **APRS SYMBOLS**
 
@@ -29,7 +32,8 @@ APRS Object
 
 Software GUI
 
-![image](https://github.com/N1OF/ARES2APRS/assets/125296450/45875a58-87a1-49f8-beb4-2c5a1e6d248f)
+![image](https://github.com/N1OF/ARES2APRS/assets/125296450/3fb86f8f-7e95-45b4-b454-3ca5ba2b4c0a)
+
 
 
 **About our versioning:**
