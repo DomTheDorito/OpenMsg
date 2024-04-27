@@ -9,6 +9,8 @@ This software adds an object to the APRS.fi map via rotate.aprs2.net. The object
 
 -Python (duh)
 
+-Pillow and Geopy libraries. Installable using pip.
+
 -Internet Connection
 
 -Patience with the developers
