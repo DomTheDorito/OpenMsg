@@ -17,13 +17,6 @@ This software adds an object to the APRS.fi map via rotate.aprs2.net. The object
 
 -Valid Amateur Radio Callsign and APRS passcode. (Magicbug has a great APRS passcode generator available here: https://github.com/magicbug/PHP-APRS-Passcode)
 
-**APRS SYMBOLS**
-
-To add symbols to your APRS packet, you must use notation for either primary (/) or alternate (\\) icon tables, followed by the symbol. You may use any symbol you desire, however, modifiers are not accepted at this time.
- 
-Example: You want to add the wall cloud symbol to your report. You would type \\ (no quotes) into the table select, followed by [ in the Symbol field. Lookup tables can be found 
-here: https://www.yachttrack.org/info_camper/downloads/APRS_Symbol_Chart.pdf
-
 
 **Examples:**
 
