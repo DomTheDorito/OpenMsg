@@ -5,10 +5,15 @@ Python Uploader for a Net Control Station to add locations of reports from spott
 
 This software adds an object to the APRS.fi map via rotate.aprs2.net. The object will be named whatever is entered into the report field, and the comment on the object will be whatever is entered into the comment field, followed by "-Reported by {Spotter's Callsign}"
 
-A dot symbol is hardcoded into the APRS string that is sent via a socket. Future releases will hopefully include an easy way to graphically change the icon, which will be useful for adding specific events to the map (Wx events, key locations, etc)
+**APRS SYMBOLS**
+
+To add symbols to your APRS packet, you must use notation for either primary (/) or alternate (\\) icon tables, followed by the symbol. You may use any symbol you desire, however, modifiers are not accepted at this time.
+ 
+Example: You want to add the wall cloud symbol to your report. You would type \\ (no quotes) into the table select, followed by [ in the Symbol field. Lookup tables can be found 
+here: https://www.yachttrack.org/info_camper/downloads/APRS_Symbol_Chart.pdf
 
 
-Examples:
+**Examples:**
 
 APRS Object
 
