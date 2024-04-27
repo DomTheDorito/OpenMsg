@@ -34,7 +34,8 @@ APRS Object
 
 Software GUI
 
-![image](https://github.com/N1OF/ARES2APRS/assets/125296450/3fb86f8f-7e95-45b4-b454-3ca5ba2b4c0a)
+![image](https://github.com/N1OF/ARES2APRS/assets/125296450/a78dbd60-acb9-4add-aa52-54b81f257861)
+
 
 
 
