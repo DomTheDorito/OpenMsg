@@ -1,7 +1,6 @@
 /- Home
 /. X
 // Red Dot
-/(0-9) Circle number
 /: Fire
 /> Car
 /W WX Service
