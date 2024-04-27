@@ -5,6 +5,13 @@ Python Uploader for a Net Control Station to add locations of reports from spott
 
 This software adds an object to the APRS.fi map via rotate.aprs2.net. The object will be named whatever is entered into the report field, and the comment on the object will be whatever is entered into the comment field, followed by "-Reported by {Spotter's Callsign}"
 
+**PREREQUISITES**
+
+Python (duh)
+Internet Connection
+Patience with the developers
+Valid Amateur Radio Callsign and APRS passcode. (Magicbug has a great APRS passcode generator available here: https://github.com/magicbug/PHP-APRS-Passcode)
+
 **APRS SYMBOLS**
 
 To add symbols to your APRS packet, you must use notation for either primary (/) or alternate (\\) icon tables, followed by the symbol. You may use any symbol you desire, however, modifiers are not accepted at this time.
