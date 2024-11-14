@@ -1,4 +1,6 @@
-# OpenMsg
+![alt text](https://github.com/DomTheDorito/OpenMsg/blob/main/OpenMsg.png "OpenMsg")
+# 
+
 Simple program to send and receive message via the APRS Network
 
 **This project is in its infancy. Expect bugs to happen**
